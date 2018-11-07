@@ -1,9 +1,16 @@
+import random
+answer = random.randint(0, 10)
+
 print("Guess Game!")
 print()
 
-name = input("Guess a number 1-10:")
 
-import random
-print(random.randint(0, 10))
+playing = True
+guesses_left = 5
 
-while  and  :
+while guesses_left > 0 and playing:
+    name = input("Guess a number 1-10:")
+    if name == answer:
+        print("YOU WIN!!!!! YAY!!!!!!")
+        playing = False
+    elif:  guesses_left -= 1
