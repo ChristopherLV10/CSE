@@ -13,4 +13,5 @@ while guesses_left > 0 and playing:
     if name == answer:
         print("YOU WIN!!!!! YAY!!!!!!")
         playing = False
-    elif:  guesses_left -= 1
+    else:
+        guesses_left -= 1
