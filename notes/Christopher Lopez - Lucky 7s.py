@@ -4,7 +4,7 @@ print("Lucky 7s!")
 print("Round: 1")
 
 playing = True
-round = 0
+round = 1
 money = 15
 while money > 0:
     Dice_1 = random.randint(1, 6)
