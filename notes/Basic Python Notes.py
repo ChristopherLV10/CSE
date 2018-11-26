@@ -141,12 +141,37 @@ import random  # This should be on line 1
 print(random.randint(0,100))
 
 
- # Equality Statements
- print(5 > 3)
- print(5 >= 3)
- print(3 == 3)
- print(3 != 4)
- """
- a = 3 # A is set to 3
- a == 3 # Is a equal to 3?
- """
+
+# Creating a list
+colors = ["blue", "turquoise", "pink", "orange", "black", "red", "brown", "white", "purple"]  #USE SQUARE BRACKETS!!!!
+print(colors)
+print(colors[1])
+print(colors[0])
+
+# Length of the list
+print("There are %d things in the list." % len(colors))
+# Changing Elements in a list
+colors[1] = "Green"
+print(colors)
+
+# Looping through lists
+for item in colors:
+    print(item)
+
+'''
+1. Make a list with 7 items
+2. change the third thing in the list
+3. print the item
+4. print the full list
+'''
+new_list = ["United States", "Mexico", "Canada", "France", "Germany","Spain", "Argentina"]
+new_list[2] = "Columbia"
+print(new_list[2])
+print(new_list)
+print("The last thing in the list is %s" % new_list[len(new_list) - 1])
+
+# Slicing a list
+print(new_list[l:3])
+print(new_list[1:4])
+print(new_list[1:])
+print(new_list[:4])
