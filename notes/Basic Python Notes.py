@@ -220,7 +220,7 @@ print("".join(list1))
 
 
 
-#Hangman hints
+# Hangman hints
 for i in range(len(list1)): # i goes through all indicies
     if list1[i] == "u": # if we find a U
         list1.pop(i)    # remove the i-th index
