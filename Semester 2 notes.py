@@ -15,3 +15,4 @@ print(colors)
 colors.pop(0)
 print(colors)
 print(len(colors))
+
