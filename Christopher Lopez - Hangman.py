@@ -9,12 +9,6 @@ solved = False
 
 while guesses > 0 and playing:
     print(letters_guessed)
-    for i in range(len(hangman_words)):
-        if hangman_words[i] == "letter":
-            hangman_words.pop(i)
-            hangman_words.insert(i, "*")
-            print(answer)
-
     letter = input("Enter a letter:")
     letters_guessed.append(letter)
     if letter not in answer:
@@ -23,4 +17,3 @@ while guesses > 0 and playing:
         print("Guesses Left:", guesses)
     else:
         print(answer)
-
