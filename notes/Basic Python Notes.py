@@ -221,10 +221,10 @@ print("".join(list1))
 
 
 # Hangman hints
-for i in range(len(list1)): # i goes through all indicies
-    if list1[i] == "u": # if we find a U
-        list1.pop(i)    # remove the i-th index
-        list1.insert(i, "*")    # Put a * there instead
+for i in range(len(list1)):
+    if list1[i] == "u":
+        list1.pop(i)
+        list1.insert(i, "*")
 
 # Turn a list into a string
 print("".join(list1))
