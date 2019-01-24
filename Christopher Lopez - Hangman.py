@@ -7,11 +7,14 @@ playing = True
 answer = random.choice(hangman_words)
 letters_in_answer = list(answer)
 hidden_word = list("*" * len(answer))
-solved = False
 
-print(letters_in_answer)
 
 while guesses > 0 and playing:
+    if letters_in_answer == hidden_word:
+        print("You got it! It is", answer)
+        playing = False
+        guesses = 0
+
     print(letters_guessed)
     print(hidden_word)
     letter = input("Enter a letter:")
@@ -24,5 +27,3 @@ while guesses > 0 and playing:
         guesses = guesses - 1
         print("Wrong")
         print("Guesses Left:", guesses)
-
-
