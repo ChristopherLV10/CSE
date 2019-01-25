@@ -14,6 +14,7 @@ while guesses > 0 and playing:
         print("You got it! It is", answer)
         playing = False
         guesses = 0
+        continue
 
     print(letters_guessed)
     print(hidden_word)
