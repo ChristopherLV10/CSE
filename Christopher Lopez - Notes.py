@@ -94,3 +94,8 @@ for state, info in complex_dictionary.items():
         print(stats)
         print(">" * 20)
     print("<" * 20)
+
+states["AR"] = "Arizona?"
+
+states["AR"] = "Arkansas"
+print(states['AR'])
