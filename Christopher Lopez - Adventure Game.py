@@ -7,15 +7,21 @@ world_map = {
         'NAME': "Entrance",
         'DESCRIPTION': "In front of the entrance to the vault.",
         'PATHS': {
-            'WEST': "Left Button"
-
+            'WEST': "Left Platform"
         }
     },
-    'Left Button': {
-        'NAME': "Left Button",
-        'DESCRIPTION': "Here is one of the 2 buttons you need to press to open the door",
+    'Left Platform': {
+        'NAME': "Left Platform",
+        'DESCRIPTION': "Here is one of the 2 platforms you need to go to so that the door could open",
         'PATHS': {
             'EAST': 'VOG Entrance'
+        }
+    },
+    'Right Platform': {
+        'NAME': "Right Platform",
+        'DESCRIPTION': "Here is one of the 2 platforms you need to go to so that the door could open",
+        'PATHS': {
+            'WEST': 'VOG Entrance'
         }
     }
 }
