@@ -31,7 +31,26 @@ world_map = {
         'NAME': "Path Into VOG",
         'DESCRIPTION': "This path leads you to the inside of the vault of glass",
         'PATHS': {
-            'SOUTH': 'VOG Entrance'
+            'SOUTH': 'VOG Entrance',
+            'NORTH': 'Templar Room Entrance'
+        }
+    },
+    'Templar Room Entrance': {
+        'NAME': "Templar Room Entrance",
+        'DESCRIPTION': "In front of you is the templar room",
+        'PATHS': {
+            'NORTH': 'South of Templar Room',
+            'SOUTH': 'Path Into VOG'
+        }
+    },
+    'South of Templar Room': {
+        'NAME': "South of Templar Room",
+        'DESCRIPTION': "South side of the templar room",
+        'PATHS': {
+            'WEST': 'West of Templar Room',
+            'NORTH': 'North of Templar Room',
+            'EAST': 'East of Templar Room',
+            'SOUTH': 'Templar Room Entrance'
         }
     }
 }
