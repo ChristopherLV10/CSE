@@ -52,5 +52,44 @@ world_map = {
             'EAST': 'East of Templar Room',
             'SOUTH': 'Templar Room Entrance'
         }
+    },
+    'North of Templar Room': {
+        'NAME': "North of Templar Room",
+        'DESCRIPTION': "North side of the templar room",
+        'PATHS': {
+            'SOUTH': 'South of Templar Room',
+            'North': 'Gorgon Maze'
+        }
+    },
+    'East of Templar Room': {
+        'NAME': "East of Templar Room",
+        'DESCRIPTION': "East side of the templar room",
+        'PATHS': {
+            'WEST': 'South of Templar Room'
+        }
+    },
+    'West of Templar Room': {
+        'NAME': "West of Templar Room",
+        'DESCRIPTION': "West side of the templar room",
+        'PATHS': {
+            'EAST': 'South of Templar Room'
+        }
+    },
+    'Gorgon Maze': {
+        'NAME': "Gorgon Maze",
+        'DESCRIPTION': "You are at a maze, choose a path",
+        'PATHS': {
+            'SOUTH': 'North of Templar Room',
+            'WEST': 'Path 1',
+            'NORTH': 'Path 2',
+            'EAST': 'Path 3'
+        }
+    },
+    'Path 1': {
+        'NAME': "Path 1",
+        'DESCRIPTION': "1 of the 3 paths you can follow to try to get to the end of the maze.",
+        'PATHS': {
+            'EAST': 'Gorgon Maze'
+        }
     }
 }
