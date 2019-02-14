@@ -1,6 +1,8 @@
 print("Welcome to The Vault of Glass!")
+playing = False
 
 directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'UP', 'DOWN']
+
 
 world_map = {
     'VOG Entrance': {
@@ -91,5 +93,47 @@ world_map = {
         'PATHS': {
             'EAST': 'Gorgon Maze'
         }
+    },
+    'Path 2': {
+        'NAME': "Path 2",
+        'DESCRIPTION': "1 of the 3 paths you can follow to try to get to the  end of the maze.",
+        'PATHS': {
+            'SOUTH': 'Gorgon Maze'
+        }
+    },
+    'Path 3': {
+        'NAME': "Path 3",
+        'DESCRIPTION': "1 of the 3 paths you can follow to try to get to the  end of the maze.",
+        'PATHS': {
+            'WEST': 'Gorgon Maze',
+            'NORTH': 'Path to Glass Throne'
+
+        }
+    },
+    'Path to Glass Throne': {
+        'NAME': "Path to Glass Throne",
+        'DESCRIPTION': "Path that leads you to the glass throne",
+        'PATHS': {
+            'SOUTH': 'Path 3',
+            'DOWN': 'Glass Throne Door'
+        }
     }
 }
+current_node = world_map['VOG Entrance']
+while playing:
+    print(current_node['NAME'])
+    print(current_node['DESCRIPTION'])
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.upper() in directions:
+
+    try:
+
+        room_name = current_node['PATHS'][command.upper()]
+        current_node = world_map[room_name]
+    except KeyError:
+        print("I can't go that way")
+    else:
+        print("Command Not Found")
+

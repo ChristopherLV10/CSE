@@ -26,6 +26,7 @@ while playing:
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.upper() in directions:
+
     try:
 
             room_name = current_node['PATHS'][command.upper()]
