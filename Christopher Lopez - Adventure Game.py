@@ -1,5 +1,5 @@
 print("Welcome to The Vault of Glass!")
-playing = False
+playing = True
 
 directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'UP', 'DOWN']
 
@@ -117,7 +117,15 @@ world_map = {
             'SOUTH': 'Path 3',
             'DOWN': 'Glass Throne Door'
         }
+    },
+    'Glass Throne Door': {
+        'NAME': "Glass Throne Door",
+        'DESCRIPTION': "..",
+        'PATHS': {
+            'NORTH': ''
+        }
     }
+
 }
 current_node = world_map['VOG Entrance']
 while playing:
@@ -127,7 +135,6 @@ while playing:
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.upper() in directions:
-
     try:
 
         room_name = current_node['PATHS'][command.upper()]
