@@ -124,9 +124,7 @@ world_map = {
         'PATHS': {
             'NORTH': ''
         }
-    },
-    
-
+    }
 }
 current_node = world_map['VOG Entrance']
 while playing:
