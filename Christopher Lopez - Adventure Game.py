@@ -120,10 +120,7 @@ world_map = {
     },
     'Glass Throne Door': {
         'NAME': "Glass Throne Door",
-        'DESCRIPTION': "..",
-        'PATHS': {
-            'NORTH': ''
-        }
+        'DESCRIPTION': "The end of the Vault",
     }
 }
 current_node = world_map['VOG Entrance']
@@ -134,12 +131,10 @@ while playing:
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.upper() in directions:
-    try:
-
-        room_name = current_node['PATHS'][command.upper()]
-        current_node = world_map[room_name]
-    except KeyError:
-        print("I can't go that way")
+        try:
+            room_name = current_node['PATHS'][command.upper()]
+            current_node = world_map[room_name]
+        except KeyError:
+            print("I can't go that way")
     else:
         print("Command Not Found")
-
