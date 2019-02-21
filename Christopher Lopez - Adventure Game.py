@@ -60,7 +60,7 @@ world_map = {
         'DESCRIPTION': "North side of the templar room",
         'PATHS': {
             'SOUTH': 'South of Templar Room',
-            'North': 'Gorgon Maze'
+            'NORTH': 'Gorgon Maze'
         }
     },
     'East of Templar Room': {
