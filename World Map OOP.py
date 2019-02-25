@@ -23,7 +23,7 @@ Path_1 = Room("Path 1", None)
 Path_2 = Room("Path 2", None)
 Path_3 = Room("Path 3", None)
 Path_to_Glass_Throne = Room("Path to Glass Throne", None)
-Glass_Throne_Door = Room("Glass Throne Door")
+Glass_Throne_Door = Room("Glass Throne Door", None)
 Entrance.east = Right_Platform
 Entrance.west = Left_Platform
 Right_Platform.west = Entrance
@@ -141,21 +141,21 @@ world_map = {
     },
     'Path 1': {
         'NAME': "Path_1",
-        'DESCRIPTION': "1 of the 3 paths you can follow to try to get to the end of the maze.",
+        'DESCRIPTION': "The incorrect path. You should go back",
         'PATHS': {
             'EAST': 'Gorgon Maze'
         }
     },
     'Path 2': {
         'NAME': "Path_2",
-        'DESCRIPTION': "1 of the 3 paths you can follow to try to get to the  end of the maze.",
+        'DESCRIPTION': "The incorrect path. You should go back",
         'PATHS': {
             'SOUTH': 'Gorgon Maze'
         }
     },
     'Path 3': {
         'NAME': "Path_3",
-        'DESCRIPTION': "1 of the 3 paths you can follow to try to get to the  end of the maze.",
+        'DESCRIPTION': "The path that leads to the end of the maze.",
         'PATHS': {
             'WEST': 'Gorgon Maze',
             'NORTH': 'Path to Glass Throne'
@@ -189,4 +189,4 @@ while playing:
         except KeyError:
             print("I can't go that way")
     else:
-        print("Command Not Found") 
+        print("Command Not Found")
