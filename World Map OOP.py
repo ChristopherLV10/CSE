@@ -1,15 +1,36 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, west=None, down=None):
+    def __init__(self, name, description, north=None, south=None, east=None, west=None, down=None):
         self.name = name
         self.north = north
         self.south = south
         self.east = east
         self.west = west
         self.down = down
+        self.description = description
 
 
-# Option 1 - Define as we go
-Entrance = Room("Mr. Wiebe's Room")
+class Player(object):
+    def __init__(self, starting_location):
+        self.current_location = starting_location
+        self.inventory = []
+
+    def move(self, new_location):
+        """This moves the player to a new room
+
+        :param new_location: The room object of which you are going to
+        """
+        self.current_location = new_location
+
+    def find_next_room(self, direction):
+        """This method searches the current room so see if a room exists in that direction
+
+        :param direction:
+        :return: The Room object if it exists, or None if it does not
+        """
+        return getattr(self.current_location, direction)
+
+
+Entrance = Room("Vault Entrance", None)
 Left_Platform = Room("Left Platform", None, Entrance)
 Right_Platform = Room("Right Platform", None)
 Path_Into_VOG = Room("Path into VOG", None)
@@ -53,8 +74,8 @@ Path_to_Glass_Throne.down = Glass_Throne_Door
 print("Welcome to The Vault of Glass!")
 playing = True
 
-directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'UP', 'DOWN']
-
+directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'DOWN']
+player = Player(Entrance)
 
 world_map = {
     'VOG Entrance': {
@@ -175,17 +196,17 @@ world_map = {
         'DESCRIPTION': "The end of the Vault",
     }
 }
-current_node = world_map['VOG Entrance']
+
 while playing:
-    print(current_node['NAME'])
-    print(current_node['DESCRIPTION'])
+    print(player.current_location.name)
+    print(player.current_location.description)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
-    elif command.upper() in directions:
+    elif command.lower() in directions:
         try:
-            room_name = current_node['PATHS'][command.upper()]
-            current_node = world_map[room_name]
+            next_room = player.find_next_room(command)
+            player.move(next_room)
         except KeyError:
             print("I can't go that way")
     else:
