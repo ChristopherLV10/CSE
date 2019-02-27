@@ -7,6 +7,7 @@ class Room(object):
         self.west = west
         self.down = down
         self.description = description
+        self.characters = []
 
 
 class Player(object):
