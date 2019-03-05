@@ -5,5 +5,9 @@ class Weapon(object):
         self.bullets_left = bullets_left
 
     def press_trigger(self):
-        bullets_left -= 1
         print("")
+        bullets_left -= 1
+
+
+
+
