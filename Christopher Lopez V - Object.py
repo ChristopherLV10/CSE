@@ -1,13 +1,24 @@
 class Weapon(object):
-    def __init__(self, shoot, reload, bullets_left=30):
-        self.shoot = shoot
-        self.reload = reload
-        self.bullets_left = bullets_left
+    def __init__(self, name):
+        self.name = name
+
+
+class Burst(Weapon):
+    def __init__(self, name):
+        super(Burst, self).__init__(name)
+        self.bullets_left = 30
 
     def press_trigger(self):
-        print("")
-        bullets_left -= 1
+        self.bullets_left -= 3
+        print("Oh I have", self.bullets_left, "bullets left.")
+
+    def reload(self):
+        self.bullets_left = 30
+        print("Now I have 30 bullets")
 
 
-
-
+gun = Burst(name=Burst)
+gun.press_trigger()
+gun.press_trigger()
+gun.press_trigger()
+gun.reload()
