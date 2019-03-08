@@ -1,3 +1,7 @@
+shield = 0
+health = 100
+
+
 class Consumable(object):
     def __init__(self, name):
         self.name = name
@@ -12,7 +16,28 @@ class Helmet(Armor):
     def __init__(self, name):
         super(Helmet, self).__init__(name)
         self.name = name
-        self.shield = 10
+        self.shield = 12.5
+
+
+class Chest(Armor):
+    def __init__(self, name):
+        super(Chest, self).__init__(name)
+        self.name = name
+        self.shield = 12.5
+
+
+class Greaves(Armor):
+    def __init__(self, name):
+        super(Greaves, self).__init__(name)
+        self.name = name
+        self.shield = 12.5
+
+
+class Gauntlets(Armor):
+    def __init__(self, name):
+        super(Gauntlets, self).__init__(name)
+        self.name = name
+        self.shield = 12.5
 
 
 class Shield(Consumable):
