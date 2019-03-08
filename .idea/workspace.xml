@@ -17,7 +17,7 @@
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___World_Map_OOP.coverage" NAME="Christopher Lopez - World Map OOP Coverage Results" MODIFIED="1551827846340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1551374243041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___Notes.coverage" NAME="Christopher Lopez - Notes Coverage Results" MODIFIED="1549044777887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1551289335135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1552086976165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Semester_2_notes.coverage" NAME="Semester 2 notes Coverage Results" MODIFIED="1547571936808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez_V___Dictionary_World_Map.coverage" NAME="Christopher Lopez V - Dictionary World Map Coverage Results" MODIFIED="1548956400068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___Hangman.coverage" NAME="Christopher Lopez - Hangman Coverage Results" MODIFIED="1548969452171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -28,7 +28,7 @@
     <session id="-1267875421">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="50" />
+          <entry key="project.closed" value="51" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.175" value="1" />
@@ -44,7 +44,7 @@
           <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="2" />
-          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.43" value="2" />
           <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.47" value="2" />
           <entry key="project.open.time.48" value="1" />
@@ -66,7 +66,7 @@
           <entry key="project.open.time.83" value="1" />
           <entry key="project.open.time.90" value="1" />
           <entry key="project.open.time.96" value="1" />
-          <entry key="project.opened" value="52" />
+          <entry key="project.opened" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -82,13 +82,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="py" value="12040" />
+          <entry key="py" value="12093" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="12040" />
+          <entry key="Python" value="12093" />
         </counts>
       </usages-collector>
     </session>
@@ -107,13 +107,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/World Map OOP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+            <state relative-caret-position="1394">
+              <caret line="82" column="39" lean-forward="true" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
               <folding>
-                <marker date="1551288280761" expanded="true" signature="19:24" ph="..." />
+                <marker date="1552086928554" expanded="true" signature="19:24" ph="..." />
               </folding>
             </state>
           </provider>
@@ -146,7 +146,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Christopher Lopez V - Items.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
@@ -229,11 +229,11 @@
         <option value="$PROJECT_DIR$/Object - Notes.py" />
         <option value="$PROJECT_DIR$/Christopher Lopez V - Dictionary World Map.py" />
         <option value="$PROJECT_DIR$/Christopher Lopez - Adventure Game.py" />
-        <option value="$PROJECT_DIR$/World Map OOP.py" />
         <option value="$PROJECT_DIR$/Inheritance.py" />
         <option value="$PROJECT_DIR$/Christopher Lopez - World Map OOP.py" />
         <option value="$PROJECT_DIR$/Christopher Lopez V - Object.py" />
         <option value="$PROJECT_DIR$/Christopher Lopez V - Items.py" />
+        <option value="$PROJECT_DIR$/World Map OOP.py" />
       </list>
     </option>
   </component>
@@ -243,10 +243,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="28" />
-    <option name="y" value="-8" />
-    <option name="width" value="1346" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-77" />
+    <option name="y" value="16" />
+    <option name="width" value="744" />
     <option name="height" value="688" />
   </component>
   <component name="ProjectView">
@@ -254,7 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,6 +265,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,7 +285,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Christopher Lopez V - Object">
+  <component name="RunManager" selected="Python.World Map OOP">
     <configuration name="Christopher Lopez - Adventure Game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -405,10 +405,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.World Map OOP" />
         <item itemvalue="Python.Christopher Lopez V - Object" />
         <item itemvalue="Python.Christopher Lopez - World Map OOP" />
         <item itemvalue="Python.Inheritance" />
-        <item itemvalue="Python.World Map OOP" />
         <item itemvalue="Python.Christopher Lopez - Adventure Game" />
       </list>
     </recent_temporary>
@@ -427,15 +427,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-77" y="16" width="744" height="688" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.45537066" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49836066" weight="1.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.41452345" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2672131" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29422382" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -499,16 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="61" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/World Map OOP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
-          <folding>
-            <marker date="1551288280761" expanded="true" signature="19:24" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -581,6 +571,16 @@
             <marker date="1552067081050" expanded="true" signature="654:785" ph="..." />
             <marker date="1552067081050" expanded="true" signature="810:811" ph="..." />
             <marker date="1552067081050" expanded="true" signature="1476:1481" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/World Map OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <marker date="1552086891011" expanded="true" signature="19:24" ph="..." />
           </folding>
         </state>
       </provider>
