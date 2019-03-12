@@ -56,6 +56,16 @@ class Weapon(object):
         self.name = name
 
 
+class Sword(Weapon):
+    def __init__(self, name):
+        super(Sword, self). __init__(name)
+        self.durability = 5
+
+    def slash(self):
+        self.durability = 5
+        print("My sword's about to break, I can only slash", self.durability, "more times")
+
+
 class Burst(Weapon):
     def __init__(self, name):
         super(Burst, self).__init__(name)
