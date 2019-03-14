@@ -1,10 +1,20 @@
 shield = 0
-health = 100
 
 
 class Consumable(object):
     def __init__(self, name):
         self.name = name
+
+
+class HealthPotion(Consumable):
+    def __init__(self, name):
+        super(HealthPotion, self).__init__(name)
+        self.name = name
+        self.health = 0
+
+    def heal(self):
+        print("I just gained 50 health")
+        self.health += 50
 
 
 class Armor(object):
@@ -40,9 +50,9 @@ class Gauntlets(Armor):
         self.shield = 12.5
 
 
-class Shield(Consumable):
+class ShieldPotion(Consumable):
     def __init__(self, name):
-        super(Shield, self).__init__(name)
+        super(ShieldPotion, self).__init__(name)
         self.name = name
         self.shield = 0
     

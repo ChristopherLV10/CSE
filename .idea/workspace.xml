@@ -12,16 +12,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___Adventure_Game.coverage" NAME="Christopher Lopez - Adventure Game Coverage Results" MODIFIED="1550855388935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1548263188751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___World_Map_OOP.coverage" NAME="Christopher Lopez - World Map OOP Coverage Results" MODIFIED="1551827846340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez_V___Items.coverage" NAME="Christopher Lopez V - Items Coverage Results" MODIFIED="1552494844755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1551374243041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___Notes.coverage" NAME="Christopher Lopez - Notes Coverage Results" MODIFIED="1549044777887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1552086976165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Semester_2_notes.coverage" NAME="Semester 2 notes Coverage Results" MODIFIED="1547571936808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez_V___Dictionary_World_Map.coverage" NAME="Christopher Lopez V - Dictionary World Map Coverage Results" MODIFIED="1548956400068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___Hangman.coverage" NAME="Christopher Lopez - Hangman Coverage Results" MODIFIED="1548969452171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___Adventure_Game.coverage" NAME="Christopher Lopez - Adventure Game Coverage Results" MODIFIED="1550855388935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1548263188751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___World_Map_OOP.coverage" NAME="Christopher Lopez - World Map OOP Coverage Results" MODIFIED="1551827846340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez_V___Items.coverage" NAME="Christopher Lopez V - Items Coverage Results" MODIFIED="1552581503285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1551374243041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Attack_notes.coverage" NAME="Attack notes Coverage Results" MODIFIED="1552580046436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1552086976165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez_V___Object.coverage" NAME="Christopher Lopez V - Object Coverage Results" MODIFIED="1552321398499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Object___Notes.coverage" NAME="Object - Notes Coverage Results" MODIFIED="1550078513044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -29,7 +30,7 @@
     <session id="-1267875421">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="55" />
+          <entry key="project.closed" value="56" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.175" value="1" />
@@ -38,7 +39,7 @@
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.37" value="4" />
           <entry key="project.open.time.38" value="4" />
@@ -69,29 +70,29 @@
           <entry key="project.open.time.83" value="1" />
           <entry key="project.open.time.90" value="1" />
           <entry key="project.open.time.96" value="1" />
-          <entry key="project.opened" value="57" />
+          <entry key="project.opened" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="15" />
+          <entry key="py" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="15" />
+          <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="py" value="13270" />
+          <entry key="py" value="13741" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="13270" />
+          <entry key="Python" value="13741" />
         </counts>
       </usages-collector>
     </session>
@@ -162,17 +163,27 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Christopher Lopez V - Items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="145">
+              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
               <folding>
-                <marker date="1552495582361" expanded="true" signature="37:964" ph="..." />
-                <marker date="1552495582361" expanded="true" signature="1145:1723" ph="..." />
-                <marker date="1552495582361" expanded="true" signature="1440:1569" ph="..." />
-                <marker date="1552495582361" expanded="true" signature="1592:1723" ph="..." />
-                <marker date="1552495582361" expanded="true" signature="1748:1749" ph="..." />
-                <marker date="1552495582361" expanded="true" signature="2073:2319" ph="..." />
-                <marker date="1552495582361" expanded="true" signature="2680:2685" ph="..." />
+                <marker date="1552581717627" expanded="true" signature="11:13" ph="..." />
+                <marker date="1552581717627" expanded="true" signature="127:346" ph="..." />
+                <marker date="1552581717627" expanded="true" signature="444:1022" ph="..." />
+                <marker date="1552581717627" expanded="true" signature="739:868" ph="..." />
+                <marker date="1552581717627" expanded="true" signature="891:1022" ph="..." />
+                <marker date="1552581717627" expanded="true" signature="1053:1054" ph="..." />
+                <marker date="1552581717627" expanded="true" signature="1384:1630" ph="..." />
+                <marker date="1552581717627" expanded="true" signature="1991:1996" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Attack notes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -235,6 +246,7 @@
         <option value="$PROJECT_DIR$/Christopher Lopez - World Map OOP.py" />
         <option value="$PROJECT_DIR$/World Map OOP.py" />
         <option value="$PROJECT_DIR$/Christopher Lopez V - Object.py" />
+        <option value="$PROJECT_DIR$/Attack notes.py" />
         <option value="$PROJECT_DIR$/Christopher Lopez V - Items.py" />
       </list>
     </option>
@@ -255,7 +267,20 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSE" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -275,6 +300,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.Christopher Lopez V - Items">
+    <configuration name="Attack notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CSE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Attack notes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Christopher Lopez - World Map OOP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -341,28 +388,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Inheritance" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CSE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Inheritance.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="World Map OOP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -387,18 +412,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.World Map OOP" />
-      <item itemvalue="Python.Inheritance" />
       <item itemvalue="Python.Christopher Lopez - World Map OOP" />
       <item itemvalue="Python.Christopher Lopez V - Object" />
       <item itemvalue="Python.Christopher Lopez V - Items" />
+      <item itemvalue="Python.Attack notes" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Christopher Lopez V - Items" />
+        <item itemvalue="Python.Attack notes" />
         <item itemvalue="Python.Christopher Lopez V - Object" />
         <item itemvalue="Python.World Map OOP" />
         <item itemvalue="Python.Christopher Lopez - World Map OOP" />
-        <item itemvalue="Python.Inheritance" />
       </list>
     </recent_temporary>
   </component>
@@ -424,7 +449,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.41452345" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29344264" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18512659" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -501,6 +526,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Inheritance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+          <folding>
+            <marker date="1551375871976" expanded="true" signature="22:27" ph="..." />
+            <marker date="1551375871976" expanded="true" signature="99:104" ph="..." />
+            <marker date="1551375871976" expanded="true" signature="677:682" ph="..." />
+            <marker date="1551375871976" expanded="true" signature="777:1020" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Christopher Lopez V - Object.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -544,31 +582,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Inheritance.py">
+    <entry file="file://$PROJECT_DIR$/Attack notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding>
-            <marker date="1551375871976" expanded="true" signature="22:27" ph="..." />
-            <marker date="1551375871976" expanded="true" signature="99:104" ph="..." />
-            <marker date="1551375871976" expanded="true" signature="677:682" ph="..." />
-            <marker date="1551375871976" expanded="true" signature="777:1020" ph="..." />
-          </folding>
+        <state relative-caret-position="213">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Christopher Lopez V - Items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="145">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
           <folding>
-            <marker date="1552495582361" expanded="true" signature="37:964" ph="..." />
-            <marker date="1552495582361" expanded="true" signature="1145:1723" ph="..." />
-            <marker date="1552495582361" expanded="true" signature="1440:1569" ph="..." />
-            <marker date="1552495582361" expanded="true" signature="1592:1723" ph="..." />
-            <marker date="1552495582361" expanded="true" signature="1748:1749" ph="..." />
-            <marker date="1552495582361" expanded="true" signature="2073:2319" ph="..." />
-            <marker date="1552495582361" expanded="true" signature="2680:2685" ph="..." />
+            <marker date="1552581717627" expanded="true" signature="11:13" ph="..." />
+            <marker date="1552581717627" expanded="true" signature="127:346" ph="..." />
+            <marker date="1552581717627" expanded="true" signature="444:1022" ph="..." />
+            <marker date="1552581717627" expanded="true" signature="739:868" ph="..." />
+            <marker date="1552581717627" expanded="true" signature="891:1022" ph="..." />
+            <marker date="1552581717627" expanded="true" signature="1053:1054" ph="..." />
+            <marker date="1552581717627" expanded="true" signature="1384:1630" ph="..." />
+            <marker date="1552581717627" expanded="true" signature="1991:1996" ph="..." />
           </folding>
         </state>
       </provider>
