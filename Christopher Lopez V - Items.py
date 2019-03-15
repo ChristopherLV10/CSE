@@ -102,3 +102,4 @@ class DMR(Weapon):
     def reload(self):
         self.bullets_left = 12
         print("Now I have 12 bullets")
+
