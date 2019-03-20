@@ -21,8 +21,9 @@ class Armor(object):
 
 
 class Weapon(object):
-    def __init__(self, name):
+    def __init__(self, name, damage: int):
         self.name = name
+        self.damage = damage
 
 
 class HealthPotion(Consumable):
@@ -77,17 +78,17 @@ class Gauntlets(Armor):
 
 class Sword(Weapon):
     def __init__(self, name):
-        super(Sword, self).__init__(name)
+        super(Sword, self).__init__(name, 100)
         self.durability = 5
 
     def slash(self):
-        self.durability = 5
+        self.durability -= 1
         print("My sword's about to break, I can only slash", self.durability, "more times")
 
 
 class Burst(Weapon):
     def __init__(self, name):
-        super(Burst, self).__init__(name)
+        super(Burst, self).__init__(name, 30)
         self.bullets_left = 30
 
     def press_trigger(self):
@@ -101,7 +102,7 @@ class Burst(Weapon):
 
 class DMR(Weapon):
     def __init__(self, name):
-        super(DMR, self).__init__(name)
+        super(DMR, self).__init__(name, 70)
         self.bullets_left = 12
 
     def press_trigger(self):
@@ -132,14 +133,15 @@ class Character(object):
         target.take_damage(self.weapon.damage)
 
 
-Burst = Weapon("Blast Furnace", 30)
+burst = Burst("Blast Furnace")
+dmr = DMR("Oxygen SR3")
 Hobgoblin1 = Character("Hobgoblin", 100, Burst, armor=50)
 
 
 class Player(object):
     def __init__(self, starting_location):
         self.current_location = starting_location
-        self.inventory = [Burst]
+        self.inventory = []
 
     def move(self, new_location):
         """This moves the player to a new room
