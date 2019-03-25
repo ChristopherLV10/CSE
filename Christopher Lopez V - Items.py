@@ -6,6 +6,33 @@ class Consumable(object):
         self.name = name
 
 
+class Key(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class EntranceKey(Key):
+    def __init__(self, name):
+        super(EntranceKey, self).__init__(name)
+        self.name = name
+
+
+class VaultKey(Key):
+    def __init__(self, name):
+        super(VaultKey, self).__init__(name)
+        self.name = name
+
+
+class Map(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class VOG(Map):
+    def __init__(self, name):
+        super(VOG, self).__init__(name)
+
+
 class HealthPotion(Consumable):
     def __init__(self, name):
         super(HealthPotion, self).__init__(name)
@@ -103,3 +130,8 @@ class DMR(Weapon):
         self.bullets_left = 12
         print("Now I have 12 bullets")
 
+
+class Grenade(Weapon):
+    def __init__(self, name):
+        super(Grenade, self).__init__(name)
+        self.name = name

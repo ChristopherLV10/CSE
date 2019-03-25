@@ -135,6 +135,7 @@ class Character(object):
 
 burst = Burst("Blast Furnace")
 dmr = DMR("Oxygen SR3")
+sword = Sword("Raze Lighter")
 Hobgoblin1 = Character("Hobgoblin", 100, Burst, armor=50)
 
 
