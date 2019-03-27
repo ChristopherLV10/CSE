@@ -6,6 +6,17 @@ class Consumable(object):
         self.name = name
 
 
+class Backpack(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class Bag(Backpack):
+    def __init__(self, name):
+        super(Bag, self).__init__(name)
+        self.name = name
+
+
 class Key(object):
     def __init__(self, name):
         self.name = name

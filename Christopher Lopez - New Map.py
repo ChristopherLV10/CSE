@@ -20,6 +20,44 @@ class Armor(object):
         self.name = name
 
 
+class Backpack(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class Bag(Backpack):
+    def __init__(self, name):
+        super(Bag, self).__init__(name)
+        self.name = name
+
+
+class Key(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class EntranceKey(Key):
+    def __init__(self, name):
+        super(EntranceKey, self).__init__(name)
+        self.name = name
+
+
+class VaultKey(Key):
+    def __init__(self, name):
+        super(VaultKey, self).__init__(name)
+        self.name = name
+
+
+class Map(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class VOG(Map):
+    def __init__(self, name):
+        super(VOG, self).__init__(name)
+
+
 class Weapon(object):
     def __init__(self, name, damage: int):
         self.name = name
@@ -112,6 +150,12 @@ class DMR(Weapon):
     def reload(self):
         self.bullets_left = 12
         print("Now I have 12 bullets")
+
+
+class Grenade(Weapon):
+    def __init__(self, name):
+        super(Grenade, self).__init__(name, 200)
+        self.name = name
 
 
 class Character(object):
@@ -207,6 +251,7 @@ playing = True
 
 directions = ['north', 'south', 'east', 'west', 'down']
 player = Player(Entrance)
+
 
 while playing:
     print(player.current_location.name)
