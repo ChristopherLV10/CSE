@@ -18,7 +18,7 @@
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___Hangman.coverage" NAME="Christopher Lopez - Hangman Coverage Results" MODIFIED="1548969452171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___Adventure_Game.coverage" NAME="Christopher Lopez - Adventure Game Coverage Results" MODIFIED="1550855388935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1548263188751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___New_Map.coverage" NAME="Christopher Lopez - New Map Coverage Results" MODIFIED="1553704239862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___New_Map.coverage" NAME="Christopher Lopez - New Map Coverage Results" MODIFIED="1553789309156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez___World_Map_OOP.coverage" NAME="Christopher Lopez - World Map OOP Coverage Results" MODIFIED="1551827846340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Christopher_Lopez_V___Items.coverage" NAME="Christopher Lopez V - Items Coverage Results" MODIFIED="1552669661279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1551374243041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -47,7 +47,7 @@
           <entry key="project.open.time.40" value="4" />
           <entry key="project.open.time.41" value="3" />
           <entry key="project.open.time.42" value="2" />
-          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.43" value="3" />
           <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.47" value="2" />
           <entry key="project.open.time.48" value="1" />
@@ -72,7 +72,7 @@
           <entry key="project.open.time.90" value="1" />
           <entry key="project.open.time.96" value="1" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="67" />
+          <entry key="project.opened" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -87,14 +87,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="13" />
-          <entry key="py" value="15375" />
+          <entry key="dummy" value="20" />
+          <entry key="py" value="15431" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="15375" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Python" value="15431" />
         </counts>
       </usages-collector>
     </session>
@@ -116,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Christopher Lopez - New Map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+            <state relative-caret-position="-905">
+              <caret line="181" column="29" lean-forward="true" selection-start-line="181" selection-start-column="29" selection-end-line="181" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -126,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/Christopher Lopez V - Items.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2516">
-              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+              <caret line="148" selection-start-line="148" selection-end-line="148" />
               <folding>
                 <marker date="1553703903211" expanded="true" signature="11:13" ph="..." />
                 <marker date="1553703903211" expanded="true" signature="197:295" ph="..." />
@@ -248,7 +248,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="896" />
     <option name="height" value="735" />
@@ -418,7 +418,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49836066" weight="0.66944027" />
@@ -426,7 +426,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.41452345" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.18670887" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.18670887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -434,7 +434,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.50073206" side_tool="true" visible="true" weight="0.18670887" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014641" side_tool="true" weight="0.18670887" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -501,6 +501,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Christopher Lopez V - Items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2516">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+          <folding>
+            <marker date="1553703903211" expanded="true" signature="11:13" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="197:295" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="520:623" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="641:787" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="818:1037" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="1135:1713" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="1430:1559" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="1582:1713" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="1744:1745" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="2075:2321" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="2682:2687" ph="..." />
+            <marker date="1553703903211" expanded="true" signature="3025:3030" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attack notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Inheritance.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -546,38 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Attack notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Christopher Lopez V - Items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
-          <folding>
-            <marker date="1553703903211" expanded="true" signature="11:13" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="197:295" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="520:623" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="641:787" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="818:1037" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="1135:1713" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="1430:1559" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="1582:1713" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="1744:1745" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="2075:2321" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="2682:2687" ph="..." />
-            <marker date="1553703903211" expanded="true" signature="3025:3030" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Christopher Lopez - New Map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+        <state relative-caret-position="-905">
+          <caret line="181" column="29" lean-forward="true" selection-start-line="181" selection-start-column="29" selection-end-line="181" selection-end-column="29" />
         </state>
       </provider>
     </entry>

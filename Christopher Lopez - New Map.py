@@ -116,7 +116,7 @@ class Gauntlets(Armor):
 
 class Sword(Weapon):
     def __init__(self, name):
-        super(Sword, self).__init__(name, 100)
+        super(Sword, self).__init__(name, 150)
         self.durability = 5
 
     def slash(self):
@@ -181,12 +181,14 @@ burst = Burst("Blast Furnace")
 dmr = DMR("Oxygen SR3")
 sword = Sword("Raze Lighter")
 Hobgoblin1 = Character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin2 = Character("Hobgoblin", 100, Burst, armor=50)
+Atheon = Character("Atheon", 500, dmr, armor=100)
 
 
 class Player(object):
     def __init__(self, starting_location):
         self.current_location = starting_location
-        self.inventory = []
+        self.bag = [burst, dmr, sword]
 
     def move(self, new_location):
         """This moves the player to a new room
