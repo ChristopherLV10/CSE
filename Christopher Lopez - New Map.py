@@ -206,6 +206,8 @@ class Player(object):
         return getattr(self.current_location, direction)
 
 
+
+
 Entrance = Room("Vault Entrance", "In front of the entrance to the vault.")
 Left_Platform = Room("Left Platform", "Here is one of the 2 platforms you need to go to so that the door could open")
 Right_Platform = Room("Right Platform", "Here is one of the 2 platforms you need to go to so that the door could open")
