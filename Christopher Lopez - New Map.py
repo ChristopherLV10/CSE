@@ -206,6 +206,10 @@ class Player(object):
         return getattr(self.current_location, direction)
 
 
+commands = ["shoot"]
+
+if input == commands(0):
+    burst.press_trigger()
 
 
 Entrance = Room("Vault Entrance", "In front of the entrance to the vault.")
