@@ -206,9 +206,9 @@ class Player(object):
         return getattr(self.current_location, direction)
 
 
-commands = ["shoot"]
+command = ["shoot"]
 
-if input == commands(0):
+if input == command[0]:
     burst.press_trigger()
 
 
