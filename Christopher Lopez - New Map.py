@@ -9,6 +9,8 @@ class Room(object):
         self.description = description
         self.characters = []
 
+________________________________________________________________________________________________________________________
+
 
 class Consumable(object):
     def __init__(self, name):
@@ -157,6 +159,8 @@ class Grenade(Weapon):
         super(Grenade, self).__init__(name, 200)
         self.name = name
 
+________________________________________________________________________________________________________________________
+
 
 class Character(object):
     def __init__(self, name: str, health: int, weapon, armor):
@@ -182,7 +186,17 @@ dmr = DMR("Oxygen SR3")
 sword = Sword("Raze Lighter")
 Hobgoblin1 = Character("Hobgoblin", 100, Burst, armor=50)
 Hobgoblin2 = Character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin3 = Character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin4 = Character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin5 = Character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin7 = Character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin8 = Character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin9 = Character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin10 = Character("Hobgoblin", 100, Burst, armor=50)
+
 Atheon = Character("Atheon", 500, dmr, armor=100)
+
+________________________________________________________________________________________________________________________
 
 
 class Player(object):
@@ -205,11 +219,7 @@ class Player(object):
         """
         return getattr(self.current_location, direction)
 
-
-command = ["shoot"]
-
-if input == command[0]:
-    burst.press_trigger()
+________________________________________________________________________________________________________________________
 
 
 Entrance = Room("Vault Entrance", "In front of the entrance to the vault.")
@@ -254,7 +264,10 @@ Path_2.south = Gorgon_Maze
 Path_1.east = Gorgon_Maze
 Path_to_Glass_Throne.south = Path_3
 Path_to_Glass_Throne.down = Glass_Throne_Door
+________________________________________________________________________________________________________________________
+
 print("Welcome to The Vault of Glass!")
+
 playing = True
 
 directions = ['north', 'south', 'east', 'west', 'down']
@@ -273,5 +286,7 @@ while playing:
             player.move(next_room)
         except KeyError:
             print("I can't go that way")
+    elif "shoot" in command:
+        burst.press_trigger()
     else:
         print("Command Not Found")
