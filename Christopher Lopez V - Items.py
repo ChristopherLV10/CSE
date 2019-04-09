@@ -114,6 +114,16 @@ class Sword(Weapon):
         print("My sword's about to break, I can only slash", self.durability, "more times")
 
 
+class Dagger(Weapon):
+    def __init__(self, name):
+        super(Dagger, self).__init__(name)
+        self.durability = 100
+
+    def slash(self):
+        self.durability -= 1
+        print("My dagger can only be used", self.durability, "more times.")
+
+
 class Burst(Weapon):
     def __init__(self, name):
         super(Burst, self).__init__(name)
