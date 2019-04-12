@@ -1,6 +1,7 @@
 class Room(object):
-    def __init__(self, name, description, north=None, south=None, east=None, west=None, down=None):
+    def __init__(self, name, description, object, north=None, south=None, east=None, west=None, down=None):
         self.name = name
+        self.object = object
         self.north = north
         self.south = south
         self.east = east
@@ -214,21 +215,23 @@ class Player(object):
         return getattr(self.current_location, direction)
 
 
-Entrance = Room("Vault Entrance", "In front of the entrance to the vault.")
-Left_Platform = Room("Left Platform", "Here is one of the 2 platforms you need to go to so that the door could open")
-Right_Platform = Room("Right Platform", "Here is one of the 2 platforms you need to go to so that the door could open")
-Path_Into_VOG = Room("Path into VOG", "This path leads you to the inside of the vault of glass")
-Templar_Room_Entrance = Room("Templar Room Entrance", "In front of you is the templar room")
-South_of_Templar_Room = Room("South of Templar Room", "South side of the templar room")
-North_of_Templar_Room = Room("North of Templar Room", "North side of the templar room")
-East_of_Templar_Room = Room("East of Templar Room", "East side of the templar room")
-West_of_Templar_Room = Room("West of Templar Room", "West side of the templar room")
-Gorgon_Maze = Room("Gorgon Maze", "You are at a maze, choose a path")
-Path_1 = Room("Path 1", "1 of the 3 paths you can follow to try to get to the end of the maze.")
-Path_2 = Room("Path 2", "1 of the 3 paths you can follow to try to get to the  end of the maze.")
-Path_3 = Room("Path 3", "1 of the 3 paths you can follow to try to get to the  end of the maze.")
-Path_to_Glass_Throne = Room("Path to Glass Throne", "Path that leads you to the glass throne")
-Glass_Throne_Door = Room("Glass Throne Door", "The end of the Vault")
+Entrance = Room("Vault Entrance", "In front of the entrance to the vault.", Helmet, Chest, Greaves, Gauntlets)
+Left_Platform = Room("Left Platform", "Here is one of the 2 platforms you need to go to so that the door could open"
+                     , VaultKey)
+Right_Platform = Room("Right Platform", "Here is one of the 2 platforms you need to go to so that the door could open"
+                      , VOG)
+Path_Into_VOG = Room("Path into VOG", "This path leads you to the inside of the vault of glass", None)
+Templar_Room_Entrance = Room("Templar Room Entrance", "In front of you is the templar room", None)
+South_of_Templar_Room = Room("South of Templar Room", "South side of the templar room", None)
+North_of_Templar_Room = Room("North of Templar Room", "North side of the templar room", None)
+East_of_Templar_Room = Room("East of Templar Room", "East side of the templar room", None)
+West_of_Templar_Room = Room("West of Templar Room", "West side of the templar room", None)
+Gorgon_Maze = Room("Gorgon Maze", "You are at a maze, choose a path", None)
+Path_1 = Room("Path 1", "1 of the 3 paths you can follow to try to get to the end of the maze.", None)
+Path_2 = Room("Path 2", "1 of the 3 paths you can follow to try to get to the  end of the maze.", None)
+Path_3 = Room("Path 3", "1 of the 3 paths you can follow to try to get to the  end of the maze.", None)
+Path_to_Glass_Throne = Room("Path to Glass Throne", "Path that leads you to the glass throne", None)
+Glass_Throne_Door = Room("Glass Throne Door", "The end of the Vault", None)
 Entrance.east = Right_Platform
 Entrance.west = Left_Platform
 Entrance.north = Path_Into_VOG
@@ -264,7 +267,6 @@ playing = True
 
 directions = ['north', 'south', 'east', 'west', 'down']
 player = Player(Entrance)
-
 
 while playing:
     print(player.current_location.name)
