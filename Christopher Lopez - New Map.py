@@ -282,5 +282,7 @@ while playing:
             print("I can't go that way")
     elif "shoot" in command:
         burst.press_trigger()
+    elif "reload" in command:
+        burst.reload()
     else:
         print("Command Not Found")
