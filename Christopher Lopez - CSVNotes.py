@@ -2,7 +2,7 @@ import csv
 
 
 def validate(num: str):
-    if not all_16_degits(num):
+    if not all_16_digits(num):
         return False
     if divisible_by_2(num) and divisible_by_3(num):
         return True
@@ -22,8 +22,13 @@ def divisible_by_2(num: str):
         return True
     return False
 
+
 def all_16_digits(num: str):
 
+    def reverse_it(string):
+        print(string[0:0:-1])
+
+        reverse_it("Hello World")
 
 
 with open("Book1.csv", 'r') as old_csv:
@@ -39,3 +44,10 @@ with open("Book1.csv", 'r') as old_csv:
         if validate(old_number):
             writer.writerow(row)
 print("Done")
+
+
+def valid_card_number(num: str):
+    if len(valid_card_number(7820959846382680)):
+        print(valid_card_number("7820959846382680"))
+
+
