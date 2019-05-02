@@ -215,11 +215,11 @@ class Player(object):
         return getattr(self.current_location, direction)
 
 
-Entrance = Room("Vault Entrance", "In front of the entrance to the vault.", Helmet, Chest, Greaves, Gauntlets)
+Entrance = Room("Vault Entrance", "In front of the entrance to the vault.", None)
 Left_Platform = Room("Left Platform", "Here is one of the 2 platforms you need to go to so that the door could open"
                      , VaultKey)
 Right_Platform = Room("Right Platform", "Here is one of the 2 platforms you need to go to so that the door could open"
-                      , VOG)
+                      , None)
 Path_Into_VOG = Room("Path into VOG", "This path leads you to the inside of the vault of glass", None)
 Templar_Room_Entrance = Room("Templar Room Entrance", "In front of you is the templar room", None)
 South_of_Templar_Room = Room("South of Templar Room", "South side of the templar room", None)
@@ -280,9 +280,15 @@ while playing:
             player.move(next_room)
         except KeyError:
             print("I can't go that way")
+    elif command == "bag":
+        print(player.bag)
+    elif command == "look":
+        print("You can go:", )
     elif "shoot" in command:
         burst.press_trigger()
     elif "reload" in command:
         burst.reload()
+    elif command == "take item":
+        player.bag.append(player.current_location.object)
     else:
         print("Command Not Found")
