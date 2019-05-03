@@ -9,7 +9,7 @@ valid_card_number = "7174223103126850"
 
 def reverse_it(string):
     print(string[0:0:-1])
-    reverse_it("7174223103126850")
+    reverse_it(valid_card_number)
 
 
 list_num = list(valid_card_number)
