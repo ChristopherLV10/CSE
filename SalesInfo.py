@@ -14,6 +14,13 @@ with open("Sales Records.csv", "r") as old_csv:
     vegetables_total = 0
     baby_food_total = 0
     cereal_total = 0
+    sub_saharan_africa_total = 0
+    middle_east_and_north_africa_total = 0
+    australia_and_oceania_total = 0
+    europe_total = 0
+    asia_total = 0
+    central_america_and_the_caribbean_total = 0
+    north_america_total = 0
     item_list = []
     region_list = []
     for row in reader:
@@ -51,6 +58,20 @@ with open("Sales Records.csv", "r") as old_csv:
             baby_food_total += float(thing)
         if item_type == 'Cereal':
             cereal_total += float(thing)
+        if region == 'Sub-Saharan Africa':
+            sub_saharan_africa_total += float(thing)
+        if region == 'Middle East and North Africa':
+            middle_east_and_north_africa_total += float(thing)
+        if region == 'Australia and Oceania':
+            australia_and_oceania_total += float(thing)
+        if region == 'Europe':
+            europe_total += float(thing)
+        if region == 'Asia':
+            asia_total += float(thing)
+        if region == 'Central America and the Caribbean':
+            central_america_and_the_caribbean_total += float(thing)
+        if region == 'North America':
+            north_america_total += float(thing)
 print(item_list)
 print(region_list)
 print("Fruit Profit:", fruit_total)
@@ -65,12 +86,26 @@ print("Household Profit:", household_total)
 print("Vegetable Profit:", vegetables_total)
 print("Baby Food Profit:", baby_food_total)
 print("Cereal Profit:", cereal_total)
+print("Sub-Saharan Africa Profit:", sub_saharan_africa_total)
+print("Middle East and North Africa Profit:", middle_east_and_north_africa_total)
+print("Australia and Oceania Profit:", australia_and_oceania_total)
+print("Europe Profit:", europe_total)
+print("Asia Profit:", asia_total)
+print("Central America and the Caribbean Profit:", central_america_and_the_caribbean_total)
+print("North America Profit:", north_america_total)
 
-list_of_profits = [fruit_total, clothes_total, meat_total, beverages_total, office_supplies_total, cosmetics_total
-                   , snacks_total, personal_care_total, household_total, vegetables_total, baby_food_total
-                   , cereal_total]
+
+list_of_profits = [fruit_total, clothes_total, meat_total, beverages_total, office_supplies_total, cosmetics_total,
+                   snacks_total, personal_care_total, household_total, vegetables_total, baby_food_total,
+                   cereal_total]
 list_of_items = ["Fruits", "Clothes", "Meat", "Beverages", "Office Supplies", "Cosmetics", "Snacks", "Personal Care",
                  "Household", "Vegetable", "Baby Food", "Cereal"]
 index_of_item = list_of_profits.index(max(list_of_profits))
 print("The most profit is", list_of_items[index_of_item], "at", max(list_of_profits))
 
+list_of_regions = ['Sub-Saharan Africa', 'Middle East and North Africa', 'Australia and Oceania', 'Europe', 'Asia',
+                   'Central America and the Caribbean', 'North America']
+list_of_region_profits = [sub_saharan_africa_total, middle_east_and_north_africa_total, australia_and_oceania_total,
+                          europe_total, asia_total, central_america_and_the_caribbean_total, north_america_total]
+index_of_region = list_of_region_profits.index(max(list_of_region_profits))
+print("The most profit is", list_of_regions[index_of_region], "at", max(list_of_region_profits))
