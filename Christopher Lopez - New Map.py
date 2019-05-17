@@ -1,5 +1,6 @@
 class Room(object):
-    def __init__(self, name, description, object, characters, north=None, south=None, east=None, west=None, down=None):
+    def __init__(self, name, description, object, character,
+                 north=None, south=None, east=None, west=None, down=None):
         self.name = name
         self.object = object
         self.north = north
@@ -8,10 +9,11 @@ class Room(object):
         self.west = west
         self.down = down
         self.description = description
-        self.characters = []
+        self.character = character
 
     def __str__(self):
         return self.name
+
 
 class Consumable(object):
     def __init__(self, name):
@@ -161,7 +163,7 @@ class Grenade(Weapon):
         self.name = name
 
 
-class Character(object):
+class character(object):
     def __init__(self, name: str, health: int, weapon, armor):
         self.name = name
         self.health = health
@@ -183,22 +185,37 @@ class Character(object):
 burst = Burst("Blast Furnace")
 dmr = DMR("Oxygen SR3")
 sword = Sword("Raze Lighter")
-Hobgoblin1 = Character("Hobgoblin", 100, Burst, armor=50)
-Hobgoblin2 = Character("Hobgoblin", 100, Burst, armor=50)
-Hobgoblin3 = Character("Hobgoblin", 100, Burst, armor=50)
-Hobgoblin4 = Character("Hobgoblin", 100, Burst, armor=50)
-Hobgoblin5 = Character("Hobgoblin", 100, Burst, armor=50)
-Hobgoblin7 = Character("Hobgoblin", 100, Burst, armor=50)
-Hobgoblin8 = Character("Hobgoblin", 100, Burst, armor=50)
-Hobgoblin9 = Character("Hobgoblin", 100, Burst, armor=50)
-Hobgoblin10 = Character("Hobgoblin", 100, Burst, armor=50)
-Atheon = Character("Atheon", 500, dmr, armor=100)
+Hobgoblin1 = character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin2 = character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin3 = character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin4 = character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin5 = character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin7 = character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin8 = character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin9 = character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin10 = character("Hobgoblin", 100, Burst, armor=50)
+Atheon = character("Atheon", 500, dmr, armor=100)
 
 
 class Player(object):
-    def __init__(self, starting_location):
+    def __init__(self, starting_location, name: str, health: int, weapon, armor):
         self.current_location = starting_location
         self.bag = [burst, dmr, sword]
+        self.name = name
+        self.health = health
+        self.weapon = weapon
+        self.armor = armor
+
+    def take_damage(self, damage: int):
+        if self.armor.armor_amt > damage:
+            print("No damage is done because of some AMAZING armor.")
+        else:
+            self.health -= damage - self.armor.armor_amt
+        print("%s has %d health left" % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon.damage))
+        target.take_damage(self.weapon.damage)
 
     def move(self, new_location):
         """This moves the player to a new room
@@ -218,21 +235,22 @@ class Player(object):
 
 Entrance = Room("Vault Entrance", "In front of the entrance to the vault.", None, None)
 Left_Platform = Room("Left Platform", "Here is one of the 2 platforms you need to go to so that the door could open",
-                     VaultKey, None)
+                     EntranceKey, None)
 Right_Platform = Room("Right Platform", "Here is one of the 2 platforms you need to go to so that the door could open",
                       None, None)
 Path_Into_VOG = Room("Path into VOG", "This path leads you to the inside of the vault of glass", None, None)
 Templar_Room_Entrance = Room("Templar Room Entrance", "In front of you is the templar room", None, Hobgoblin1)
 South_of_Templar_Room = Room("South of Templar Room", "South side of the templar room", None, None)
 North_of_Templar_Room = Room("North of Templar Room", "North side of the templar room", None, None)
-East_of_Templar_Room = Room("East of Templar Room", "East side of the templar room", None, Hobgoblin3)
+East_of_Templar_Room = Room("East of Templar Room", "East side of the templar room", VaultKey, Hobgoblin3)
 West_of_Templar_Room = Room("West of Templar Room", "West side of the templar room", None, Hobgoblin2)
 Gorgon_Maze = Room("Gorgon Maze", "You are at a maze, choose a path", None, None)
 Path_1 = Room("Path 1", "The incorrect path.", None, Hobgoblin4)
 Path_2 = Room("Path 2", "The incorrect path.", None, Hobgoblin5)
 Path_3 = Room("Path 3", "The correct path.", None, None)
 Path_to_Glass_Throne = Room("Path to Glass Throne", "Path that leads you to the glass throne", None, None)
-Glass_Throne_Door = Room("Glass Throne Door", "The end of the Vault", None, None)
+Glass_Throne_Door = Room("Glass Throne Door", "The end of the Vault?", None, None)
+Glass_Throne = Room("Glass Throne", "Atheon's room.", None, Atheon)
 Entrance.east = Right_Platform
 Entrance.west = Left_Platform
 Entrance.north = Path_Into_VOG
@@ -260,6 +278,8 @@ Path_2.south = Gorgon_Maze
 Path_1.east = Gorgon_Maze
 Path_to_Glass_Throne.south = Path_3
 Path_to_Glass_Throne.down = Glass_Throne_Door
+Glass_Throne.south = Glass_Throne_Door
+Glass_Throne_Door.north = Glass_Throne
 
 
 print("Welcome to The Vault of Glass!")
@@ -267,7 +287,7 @@ print("Welcome to The Vault of Glass!")
 playing = True
 
 directions = ['north', 'south', 'east', 'west', 'down']
-player = Player(Entrance)
+player = Player(Entrance, "Titan", 100, burst, 200)
 
 while playing:
     print(player.current_location.name)
@@ -287,8 +307,12 @@ while playing:
         for item in player.bag:
             print(item.name)
     elif command == "look":
-        print("You can go:", "North:", player.current_location.north, "South:", player.current_location.south, "East:", player.current_location.east, "West:", player.current_location.west,
+        print("You can go:", "North:", player.current_location.north, "South:", player.current_location.south, "East:",
+              player.current_location.east, "West:", player.current_location.west,
               "Down:", player.current_location.down)
+        print("Item:", player.current_location.object)
+        if player.current_location.character is not None:
+            print("Enemy:", player.current_location.character.name)
     elif "shoot" in command:
         burst.press_trigger()
     elif "reload" in command:
