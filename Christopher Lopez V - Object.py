@@ -24,3 +24,6 @@ gun.press_trigger()
 gun.press_trigger()
 gun.reload()
 gun.press_trigger()
+
+GREEN = '\033[32m'  # Green Text
+print(GREEN + "This is some green text!")

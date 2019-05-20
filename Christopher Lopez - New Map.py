@@ -1,3 +1,11 @@
+Red = '\033[31m'  # Red Text
+Green = '\033[32m'  # Green Text
+Yellow = '\033[33m'  # Yellow Text
+Blue = '\033[34m'  # Blue Text
+Purple = '\033[35m'  # Purple Text
+Cyan = '\033[36m'  # Cyan Text
+
+
 class Room(object):
     def __init__(self, name, description, object, character,
                  north=None, south=None, east=None, west=None, down=None):
@@ -233,24 +241,26 @@ class Player(object):
         return getattr(self.current_location, direction)
 
 
-Entrance = Room("Vault Entrance", "In front of the entrance to the vault.", None, None)
-Left_Platform = Room("Left Platform", "Here is one of the 2 platforms you need to go to so that the door could open",
+Entrance = Room(Yellow + "Vault Entrance", "In front of the entrance to the vault.", None, None)
+Left_Platform = Room(Yellow + "Left Platform",
+                     "Here is one of the 2 platforms you need to go to so that the door could open",
                      EntranceKey, None)
-Right_Platform = Room("Right Platform", "Here is one of the 2 platforms you need to go to so that the door could open",
+Right_Platform = Room(Yellow + "Right Platform",
+                      "Here is one of the 2 platforms you need to go to so that the door could open",
                       None, None)
-Path_Into_VOG = Room("Path into VOG", "This path leads you to the inside of the vault of glass", None, None)
-Templar_Room_Entrance = Room("Templar Room Entrance", "In front of you is the templar room", None, Hobgoblin1)
-South_of_Templar_Room = Room("South of Templar Room", "South side of the templar room", None, None)
-North_of_Templar_Room = Room("North of Templar Room", "North side of the templar room", None, None)
-East_of_Templar_Room = Room("East of Templar Room", "East side of the templar room", VaultKey, Hobgoblin3)
-West_of_Templar_Room = Room("West of Templar Room", "West side of the templar room", None, Hobgoblin2)
-Gorgon_Maze = Room("Gorgon Maze", "You are at a maze, choose a path", None, None)
-Path_1 = Room("Path 1", "The incorrect path.", None, Hobgoblin4)
-Path_2 = Room("Path 2", "The incorrect path.", None, Hobgoblin5)
-Path_3 = Room("Path 3", "The correct path.", None, None)
-Path_to_Glass_Throne = Room("Path to Glass Throne", "Path that leads you to the glass throne", None, None)
-Glass_Throne_Door = Room("Glass Throne Door", "The end of the Vault?", None, None)
-Glass_Throne = Room("Glass Throne", "Atheon's room.", None, Atheon)
+Path_Into_VOG = Room(Yellow + "Path into VOG", "This path leads you to the inside of the vault of glass", None, None)
+Templar_Room_Entrance = Room(Yellow + "Templar Room Entrance", "In front of you is the templar room", None, Hobgoblin1)
+South_of_Templar_Room = Room(Yellow + "South of Templar Room", "South side of the templar room", None, None)
+North_of_Templar_Room = Room(Yellow + "North of Templar Room", "North side of the templar room", None, None)
+East_of_Templar_Room = Room(Yellow + "East of Templar Room", "East side of the templar room", VaultKey, Hobgoblin3)
+West_of_Templar_Room = Room(Yellow + "West of Templar Room", "West side of the templar room", None, Hobgoblin2)
+Gorgon_Maze = Room(Yellow + "Gorgon Maze", "You are at a maze, choose a path", None, None)
+Path_1 = Room(Yellow + "Path 1", "The incorrect path.", None, Hobgoblin4)
+Path_2 = Room(Yellow + "Path 2", "The incorrect path.", None, Hobgoblin5)
+Path_3 = Room(Yellow + "Path 3", "The correct path.", None, None)
+Path_to_Glass_Throne = Room(Yellow + "Path to Glass Throne", "Path that leads you to the glass throne", None, None)
+Glass_Throne_Door = Room(Yellow + "Glass Throne Door", "The end of the Vault?", None, None)
+Glass_Throne = Room(Yellow + "Glass Throne", "Atheon's room.", None, Atheon)
 Entrance.east = Right_Platform
 Entrance.west = Left_Platform
 Entrance.north = Path_Into_VOG
@@ -282,17 +292,16 @@ Glass_Throne.south = Glass_Throne_Door
 Glass_Throne_Door.north = Glass_Throne
 
 
-print("Welcome to The Vault of Glass!")
+print(Blue + "Welcome to The Vault of Glass!")
 
 playing = True
-
 directions = ['north', 'south', 'east', 'west', 'down']
 player = Player(Entrance, "Titan", 100, burst, 200)
 
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
-    command = input(">_")
+    command = input(Blue + ">_")
     print()
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -307,9 +316,10 @@ while playing:
         for item in player.bag:
             print(item.name)
     elif command == "look":
-        print("You can go:", "North:", player.current_location.north, "South:", player.current_location.south, "East:",
-              player.current_location.east, "West:", player.current_location.west,
-              "Down:", player.current_location.down)
+        print(Yellow + "You can go:", Yellow + Blue + "North:", player.current_location.north,
+              Blue + "South:", player.current_location.south, Blue + "East:",
+              player.current_location.east, Blue + "West:", player.current_location.west,
+              Blue + "Down:", player.current_location.down)
         print("Item:", player.current_location.object)
         if player.current_location.character is not None:
             print("Enemy:", player.current_location.character.name)
