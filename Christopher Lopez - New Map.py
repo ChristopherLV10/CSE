@@ -202,10 +202,10 @@ Hobgoblin2 = character("Hobgoblin", 100, Burst, armor=50)
 Hobgoblin3 = character("Hobgoblin", 100, Burst, armor=50)
 Hobgoblin4 = character("Hobgoblin", 100, Burst, armor=50)
 Hobgoblin5 = character("Hobgoblin", 100, Burst, armor=50)
+Hobgoblin6 = character("Hobgoblin", 100, Burst, armor=50)
 Hobgoblin7 = character("Hobgoblin", 100, Burst, armor=50)
 Hobgoblin8 = character("Hobgoblin", 100, Burst, armor=50)
 Hobgoblin9 = character("Hobgoblin", 100, Burst, armor=50)
-Hobgoblin10 = character("Hobgoblin", 100, Burst, armor=50)
 Atheon = character("Atheon", 500, dmr, armor=100)
 
 
@@ -316,6 +316,31 @@ while playing:
             player.move(next_room)
         except KeyError:
             print("I can't go that way")
+    elif player.current_location = (Path_1) or (Path_2):
+        print("You were killed by a gorgon, HA!")
+        playing = False
+    elif Hobgoblin1.health < 0:
+        print(character, "was killed")
+    elif Hobgoblin2.health < 0:
+        print(character, "was killed")
+    elif Hobgoblin3.health < 0:
+        print(character, "was killed")
+    elif Hobgoblin4.health < 0:
+        print(character, "was killed")
+    elif Hobgoblin5.health < 0:
+        print(character, "was killed")
+    elif Hobgoblin6.health < 0:
+        print(character, "was killed")
+    elif Hobgoblin7.health < 0:
+        print(character, "was killed")
+    elif Hobgoblin8.health < 0:
+        print(character, "was killed")
+    elif Hobgoblin9.health < 0:
+        print(character, "was killed")
+    elif Atheon.health < 0:
+        print(character, "was killed")
+        print(Cyan + "You Win!")
+        playing = False
     elif command == "bag":
         print("You have the following items:")
         for object in player.bag:
