@@ -1,3 +1,7 @@
+import random
+
+Dice_1 = random.randint(1, 6)
+
 Red = '\033[31m'  # Red Text
 Green = '\033[32m'  # Green Text
 Yellow = '\033[33m'  # Yellow Text
@@ -190,9 +194,9 @@ class character(object):
         target.take_damage(self.weapon.damage)
 
 
-burst = Burst("Blast Furnace")
+blast_furnace = Burst("Blast Furnace")
 dmr = DMR("Oxygen SR3")
-sword = Sword("Raze Lighter")
+raze_lighter = Sword("Raze Lighter")
 Hobgoblin1 = character("Hobgoblin", 100, Burst, armor=50)
 Hobgoblin2 = character("Hobgoblin", 100, Burst, armor=50)
 Hobgoblin3 = character("Hobgoblin", 100, Burst, armor=50)
@@ -208,7 +212,7 @@ Atheon = character("Atheon", 500, dmr, armor=100)
 class Player(object):
     def __init__(self, starting_location, name: str, health: int, weapon, armor):
         self.current_location = starting_location
-        self.bag = [burst, dmr, sword]
+        self.bag = [blast_furnace, dmr, raze_lighter]
         self.name = name
         self.health = health
         self.weapon = weapon
@@ -244,7 +248,7 @@ class Player(object):
 Entrance = Room(Yellow + "Vault Entrance", "In front of the entrance to the vault.", None, None)
 Left_Platform = Room(Yellow + "Left Platform",
                      "Here is one of the 2 platforms you need to go to so that the door could open",
-                     EntranceKey, None)
+                     EntranceKey("Entrance Key"), None)
 Right_Platform = Room(Yellow + "Right Platform",
                       "Here is one of the 2 platforms you need to go to so that the door could open",
                       None, None)
@@ -252,7 +256,8 @@ Path_Into_VOG = Room(Yellow + "Path into VOG", "This path leads you to the insid
 Templar_Room_Entrance = Room(Yellow + "Templar Room Entrance", "In front of you is the templar room", None, Hobgoblin1)
 South_of_Templar_Room = Room(Yellow + "South of Templar Room", "South side of the templar room", None, None)
 North_of_Templar_Room = Room(Yellow + "North of Templar Room", "North side of the templar room", None, None)
-East_of_Templar_Room = Room(Yellow + "East of Templar Room", "East side of the templar room", VaultKey, Hobgoblin3)
+East_of_Templar_Room = Room(Yellow + "East of Templar Room", "East side of the templar room", VaultKey("Vault Key"),
+                            Hobgoblin3)
 West_of_Templar_Room = Room(Yellow + "West of Templar Room", "West side of the templar room", None, Hobgoblin2)
 Gorgon_Maze = Room(Yellow + "Gorgon Maze", "You are at a maze, choose a path", None, None)
 Path_1 = Room(Yellow + "Path 1", "The incorrect path.", None, Hobgoblin4)
@@ -296,7 +301,7 @@ print(Blue + "Welcome to The Vault of Glass!")
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'down']
-player = Player(Entrance, "Titan", 100, burst, 200)
+player = Player(Entrance, "Titan", 100, blast_furnace and raze_lighter, 200)
 
 while playing:
     print(player.current_location.name)
@@ -313,8 +318,8 @@ while playing:
             print("I can't go that way")
     elif command == "bag":
         print("You have the following items:")
-        for item in player.bag:
-            print(item.name)
+        for object in player.bag:
+            print(object.name)
     elif command == "look":
         print(Yellow + "You can go:", Yellow + Blue + "North:", player.current_location.north,
               Blue + "South:", player.current_location.south, Blue + "East:",
@@ -323,10 +328,19 @@ while playing:
         print("Item:", player.current_location.object)
         if player.current_location.character is not None:
             print("Enemy:", player.current_location.character.name)
-    elif "shoot" in command:
-        burst.press_trigger()
+    elif command.lower() == "slash":
+        if character in player.current_location:
+            if Dice_1 == ("1", "2", "3"):
+                character.take_damage(self.character, 200)
+                raze_lighter.slash()
+    elif command.lower() == "shoot":
+        if character in player.current_location.character:
+            Dice_1.random.randint(1, 6)
+            if Dice_1 == ("1", "2", "3"):
+                character.take_damage(self.character, 200)
+                blast_furnace.press_trigger()
     elif "reload" in command:
-        burst.reload()
+        blast_furnace.reload()
     elif command == "take item":
         player.bag.append(player.current_location.object)
     else:
